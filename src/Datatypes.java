@@ -3,6 +3,7 @@ public class Datatypes {
 //      Chaîne de caractères
         String prenom = "Sullyvan";
         String nom = "LAINEZ";
+        String nomComplet = prenom + " " + nom;
 
 //    Caractères
     char genre = 'M';
