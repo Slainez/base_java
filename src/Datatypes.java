@@ -10,6 +10,7 @@ public class Datatypes {
 
 //   Réels
     float poids = 75.5F;
+    float tjm = 8.5F;
 
 //   Réels double precision
 
@@ -17,5 +18,9 @@ public class Datatypes {
 
 //      Byte : variante d'entier court
     byte age = 26 ;
+
+
+    System.out.println("Je suis "+ prenom + " " + nom + ",j'ai " + age +" ans.Mon tjm est de " + tjm + " euros");
+    System.out.printf("je suis %s %s,j'ai %d ans.\nMon TJM est de %.1f €",prenom,nom,age,tjm);
     }
 }
