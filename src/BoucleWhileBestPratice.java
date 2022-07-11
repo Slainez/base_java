@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exerciceWhile {
+public class BoucleWhileBestPratice {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
 //        Fixer le nombre de caractères à 4
@@ -8,36 +8,26 @@ public class exerciceWhile {
 //        exactement 4 chiffres
 
 //        Définition du code PIN
-        int codePIN = 0 ;
-        int longueur = 0 ;
-        while(longueur < 4){
-            System.out.print("Veuillez définir un code PIN : ");
-             codePIN=input.nextInt();
-             longueur = (int) Math.log1p(codePIN) ;
-        }
-
+        System.out.print("Veuillez définir un code PIN : ");
+        int codePIN=input.nextInt();
 
 //        Essayer de deverouiller le téléphone avec un code PIN
         int codePINATester;
 
 //        Limiter le nombre de tentatives à 3.Mais ne pas utiliser une boucle for
-        int compteur = 0 ;
+//        Si au bout 3 tentatives, le code PIN n'est toujours pas correct, alors on
+//        affiche "Votre appareil est bloqué, et on sort de la boucle"
         while (true){
             System.out.print("Entrer un code PIN pour déverouiller l'appareil " +
                     ": ");
             codePINATester=input.nextInt();//1234
-            compteur ++ ;
-            if (compteur == 3 ){
-                break ;
-            }
-
             if(codePINATester==codePIN){
                 System.out.println("**************************");
                 System.out.println("** Appareil déverouillé **");
                 System.out.println("**************************");
                 break;
             }
-            System.out.println("Code PIN Erroné.Veuillez reessayer");
+                System.out.println("Code PIN Erroné.Veuillez reessayer");
         }
     }
 }

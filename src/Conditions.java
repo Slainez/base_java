@@ -37,9 +37,5 @@ public class Conditions {
         }else{
             System.out.println("a*2 n'est pas > b*2");
         }
-
-
-
-
     }
 }

@@ -1,30 +1,19 @@
 public class Tableaux {
     public static void main(String[] args) {
-        float[] notes = {15.5F, 18.2F, 13.2F, 10, 14.6F};
+        float note1=15.5F;
+        float note2=18.2F;
+        float note3=13.2F;
+        float note4=10;
+        float note5=14.6F;
 
-//        Mauvaise pour l'affichage
-//        System.out.println(notes[0]);
-//        System.out.println(notes[1]);
-//        System.out.println(notes[2]);
-//        System.out.println(notes[3]);
-//        System.out.println(notes[4]);
+        //Calculer la somme
+        float sommeNotes=note1+note2+note3+note4+note5;
+        //Calculer la moyenne
+        float moyenne=sommeNotes/5;
+        System.out.printf("Somme : %.2f\n",sommeNotes);
+        System.out.printf("Moyenne : %.2f",moyenne);
 
-//        Bonne approche pour l'affichage
-        for (int index = 0; index < notes.length; index++) {
-            System.out.println(notes[index]);
-        }
-
-        //        Calcul de la somme
-        float sommeNotes = 0;
-        for (int index = 0; index < notes.length; index++) {
-            // index = 0 : sommeNotes = 0 + 15.5 = 15.5
-            // index = 1 : sommeNotes = 15.5 + 18.2 = 33.7
-            // index = 2 : sommeNotes = 33.7 + 13.2 = 46.9
-            // index = 3 : sommeNotes = 46.9 + 10 = 56.9
-            // index = 4 : sommeNotes = 56.9 + 14.6 = 71.5
-            // index = 5 : 5<notes.length(5) : Faux
-            sommeNotes = sommeNotes + notes[index];
-        }
-        System.out.println("Somme notes : " + sommeNotes);
+        // Les notes c'est pour un étudiant
+        // Stocker les notes de l'étudiant dans une seule collection
     }
 }
