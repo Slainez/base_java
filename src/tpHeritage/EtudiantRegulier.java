@@ -17,6 +17,6 @@ public class EtudiantRegulier extends Etudiant {
     }
     @Override
     public String toString() {
-        return "Etudiant Regulier \n" + super.toString()+ String.format("Note moyenne : %s\n",noteMoyenne);
+        return "Etudiant Regulier \n" + super.toString()+ String.format("Note moyenne : %.1f\n",noteMoyenne);
     }
 }
